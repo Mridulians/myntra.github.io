@@ -1,0 +1,462 @@
+
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+.header{
+    display: flex;
+    background-color: white;
+    border: 2px solid whitesmoke;
+    width: 100%;
+    height: 76px;
+       
+}
+
+.logo-img{
+    width: 80px;
+    height: 66px;
+    align-items: center;
+    padding: 13px;
+    cursor: pointer;
+}
+
+ ul {
+     display: flex;
+}
+ul a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style: none;
+    margin: 10px;
+    padding: 15px;
+    font-weight: bolder;
+    /* align-items: center;
+    justify-content: center;
+    text-align: center; */
+}
+
+input{
+    width: 33%;
+    float: left;
+    font-size: 14px;
+    height: 20px;
+    border: 1px solid #f5f5f6;
+    align-items: center;
+    padding: 7px;
+    margin: 23px;
+    background: #f5f5f6;
+    box-sizing: content-box;
+    cursor: pointer;
+}
+
+button{
+ 
+    position: absolute;
+    left: 1248px;
+    width: 32px;
+    height: 34px;
+    /* bottom: auto; */
+    margin: 23px;
+    border: 3px solid black;
+    cursor: pointer;
+    
+}
+
+.login{
+    display: flex;
+    font-size: 25px;
+    /* padding: 27px; */
+   /* padding: 10px; */
+    margin: 31px;
+    text-indent: 30px;
+    cursor: pointer;
+}
+
+.login a{
+    text-decoration: none;
+    color: black;
+}
+
+/* .body img{
+    width: 100%;
+    height: auto;
+} */
+
+
+/* <!-- body begins here --> */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 600px;
+}
+
+.slideshow {
+    height: 100%;
+    overflow: hidden;
+   
+    position: relative;
+}
+
+
+.slideshow-wrapper {
+    display: flex;
+   
+    width: 400%;
+    height: 100%;
+    position: relative;
+   
+    animation: slideshow 20s infinite;
+}
+
+
+.slide {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+
+@keyframes slideshow {
+    0% {
+        left: 0;
+    }
+
+    10% {
+        left: 0;
+    }
+
+    15% {
+        left: -100%;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    30% {
+        left: -200%;
+    }
+
+    40% {
+        left: -200%;
+    }
+
+    45% {
+        left: -300%;
+    }
+
+    55% {
+        left: -300%;
+    }
+
+    60% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -100%;
+    }
+
+    85% {
+        left: -100%;
+    }
+
+    90% {
+        left: 0%;
+    }
+}
+
+
+.slide-btn {
+    background-color: #bbb;
+    border-radius: 50%;
+    border: .2rem solid #d38800;
+    width: 1.2rem;
+    height: 1.2rem;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 70;
+}
+
+.slide-btn-1 {
+    left: 45%;
+}
+
+.slide-btn-2 {
+    left: 50%;
+}
+
+.slide-btn-3 {
+    left: 55%;
+}
+
+.slide-btn-4 {
+    left: 60%;
+}
+
+
+.slide-btn-1:focus~.slideshow-wrapper {
+    animation: none;
+    left: 0;
+}
+
+.slide-btn-2:focus~.slideshow-wrapper {
+    animation: none;
+    left: -100%;
+}
+
+.slide-btn-3:focus~.slideshow-wrapper {
+    animation: none;
+    left: -200%;
+}
+
+.slide-btn-4:focus~.slideshow-wrapper {
+    animation: none;
+    left: -300%;
+}
+
+
+.slide-btn:focus {
+    background-color: #308d46;
+}
+
+
+/* <!-- body ends here --> */
+
+
+/* cards section begins */
+
+
+h4{
+    font-size: 43px;
+    margin: 3rem;
+}
+
+.deal a{
+    color: black;
+    text-decoration: none;
+}
+
+ *{
+    box-sizing: border-box;
+  } 
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 12%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  /* .box {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    /* padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  } */ */
+
+  .box .card-img{
+    width: 17rem;
+    height: 21rem;
+    align-items: center;
+    padding: 0px;
+    cursor: pointer;
+  }
+
+
+  .box .card1-img{
+    width: 12rem;
+    height: 21rem;
+    align-items: center;
+    padding: 0px;
+    cursor: pointer;
+  }
+
+  .box .card2-img{
+    width: 11rem;
+    height: 21rem;
+    align-items: center;
+    padding: 0px;
+    cursor: pointer;
+  }
+
+  .box .card3-img{
+    width: 11rem;
+    height: 15rem;
+    align-items: center;
+    padding: 0px;
+    cursor: pointer;
+  }
+  
+
+  .box1 .card4-img{
+    width: 18.7rem;
+    height: 15rem;
+    align-items: center;
+    padding: 0px;
+    cursor: pointer;
+  }
+
+  .column1 {
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+  }
+
+  .box1{
+      width: 10%;
+     margin: 0;
+     padding: 0;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+
+/* cards section ends */
+
+
+.footer{
+    background-color: black;
+}
+.footer1 h4{
+    color: white;
+    padding: 2rem;
+    font-size: 1.5rem;
+    margin: 0rem;
+}
+
+.footer1 ul{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.footer1 ul a{
+    text-decoration: none;
+}
+
+ .footer1 ul  li{
+    color: white;
+    padding: 0rem;
+
+}
+
+
+.footer2 p{
+    color: white;
+    /* position: absolute; */
+    font-size: 1.5rem;
+    margin: 0 20rem;
+    /* margin-top: 3rem; */
+    position:relative; 
+    left: 106px;
+    top: -312px;
+}
+
+.footer2 ul {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    position: relative;
+    left: 388px;
+    top: -301px;
+}
+
+.footer2 ul a{
+    text-decoration: none;
+}
+
+.footer2 ul li{
+    color: white;
+    padding: 0rem;
+}
+
+
+.footer3 p{
+    color: white;
+    position: relative;
+    left: 800px;
+    top: -782px;
+}
+
+.footer3 img{
+    position: relative;
+    left: 739px;
+    top: -718px;
+    width: 13rem;
+    height: 4rem;
+}
+
+.footer3 .apple img{
+    position: relative;
+    left: 1013px;
+    top: -782px;
+}
+
+.banana h5{
+    color: white;
+    position: relative;
+    left: 800px;
+    top: -707px;
+}
+
+.banana img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.banana img:hover{
+    transform: scale(0.5) translateY(-15px);
+}
+.section{
+    overflow: hidden;
+    width: 100%;
+    height: 33rem;
+}

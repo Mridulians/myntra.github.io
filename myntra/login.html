@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html>
+<style>
+    /*set border to the form*/
+     
+    form {
+        border: 3px solid #f1f1f1;
+    }
+    /*assign full width inputs*/
+     
+    input[type=text],
+    input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    /*set a style for the buttons*/
+     
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+    /* set a hover effect for the button*/
+     
+    button:hover {
+        opacity: 0.8;
+    }
+    /*set extra style for the cancel button*/
+     
+    .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+    }
+    /*centre the display image inside the container*/
+     
+    .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+    }
+    /*set image properties*/
+     
+    img.avatar {
+        width: 40%;
+        border-radius: 50%;
+    }
+    /*set padding to the container*/
+     
+    .container {
+        padding: 16px;
+    }
+    /*set the forgot password text*/
+     
+    span.psw {
+        float: right;
+        padding-top: 16px;
+    }
+    /*set styles for span and cancel button on small screens*/
+     
+    @media screen and (max-width: 300px) {
+        span.psw {
+            display: block;
+            float: none;
+        }
+        .cancelbtn {
+            width: 100%;
+        }
+    }
+
+
+    .popup{
+    width: 280px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50% ,-50%) scale(0.1) ;
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s ,top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50% ,-50%) scale(1);
+}
+
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0 ,0.2s);
+}
+
+.popup h2{
+    font-size: 38px;
+    margin:30px 0 10px ;
+    font-weight: 500;
+
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    color: #fff;
+    background-color: #153b09;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow:  0 5px 5px rgba(0, 0, 0 ,0.2s);
+}
+</style>
+ 
+<body>
+ 
+    <h2>Login Form</h2>
+    <!--Step 1 : Adding HTML-->
+    <form action="/action_page.php">
+        
+ 
+        <div class="container">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+ 
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+ 
+             <button class="btn" type="submit" onclick="openpopup()">Login</button>      
+            <input type="checkbox" checked="checked"> Remember me
+        </div>
+ 
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+        
+    <div class="popup" id="popup">
+        <img src="404-tick.png" alt="">
+        <h2>THANK YOU!! </h2>
+        <p>
+            your details has been successfully submitted. Thanks!
+        </p>
+        <button type="button" onclick="closepopup()">ok</button>
+
+    </div>
+
+
+
+
+    <a href="myntra.html"><h4>Back to main Page</h4></a> 
+
+
+
+
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openpopup() {
+            popup.classList.add("open-popup");
+        }
+
+        function closepopup() {
+            popup.classList.remove("open-popup");
+        }
+    </script>
+ 
+</body>
+ 
+</html>
